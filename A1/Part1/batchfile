@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+echo Hello this   is the bash file
+pwd
+echo lets move to test1
+cd test1
+pwd
+echo lets move back to prevous directory
+cd ..
+echo Thank you! Have a noce day :)

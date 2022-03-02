@@ -1,3 +1,14 @@
+// Our Hacker Shell
+// System Practicum - A1 - Part1
+// Team Details:
+// Prashant Kumar  -  B19101
+// Ravi Kumar      -  B19191
+// Saloni Patidar  -  B19111
+// Gaurav Sahitya  -  B19083
+// Sagar Taffardar -  B19110
+// Shubham Sourav  -  B19222
+
+// Including all necessay library
 #include <iostream>
 #include <map>
 #include <fstream>
@@ -8,9 +19,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
-
-using namespace std;
-
+// library separate for windows and linux
 #ifdef __unix__ /* __unix__ is usually defined by compilers targeting Unix systems */
 
 #define OS_Windows 0
@@ -24,74 +33,67 @@ using namespace std;
 #include <windows.h>
 #include <stdio.h>
 #include <tchar.h>
-#define DIV 1048576
-#define WIDTH 7
 
 #endif
 
+using namespace std;
+
+// storing environment Variables in key value pair
 map<string, string> environmentVariables;
 
+// list of all commands and their description
 vector<pair<string, string>> commands_Table = {
-    {"clr", "Clear the screen"},
-    {"pause", "pause screen"},
-    {"help", "help"},
+    {"clr", "Clear the terminal screen"},
+    {"pause", "Pause operations of the shell until 'Enter' is pressed."},
+    {"help", "Display user manual"},
     {"quit", "Quit the shell"},
     {"history", "Display the list of previously executed commands, even on shell restart."},
-    {"environ", "List all the environment strings of the current shell and the bash shell"},
-    {"pwd", "present working directory"},
+    {"pwd", "GIve the current working directory"},
     {"cd", "change directory"},
     {"dir", "list content of directory"},
-    {"echo", "display a line of text"}};
+    {"echo", "display a line of text"},
+    {"environ", "List all the environment strings of the current shell and the bash shell"}};
 
-vector<string> splitString(string command)
-{
-    vector<string> wordList;
-    string word = "";
-    for (auto x : command)
-    {
-        if (x == ' ')
-        {
-            wordList.push_back(word);
-            word = "";
-        }
-        else
-            word = word + x;
-    }
-    wordList.push_back(word);
-    return wordList;
-}
-
+// Class contain execution of all commands
 class ALLCommands
 {
 public:
+    // 1. clr
+    // function for clear the terminal screen
     void clear_screen()
     {
         if (!OS_Windows)
-            system("clear");
+            system("clear"); // system() that include in <stdlib.h>
         else
             system("cls");
     }
 
+    // 2. pause
+    // function for Pausing operations of the shell until ‘Enter’ is pressed.
     void pause_cmd()
     {
         cout << "Execution is paused! :)\nPress enter to continue!\n";
         while (cin.get() != '\n')
             ;
     }
+
+    // 3. help
+    // function for dispaying user manual and all commands info
     void help()
     {
-
         for (auto x : commands_Table)
-        {
             cout << x.first << " - " << x.second << "\n";
-        }
     }
 
+    // 4. quit
+    // function that quit the shell
     void quit_shell()
     {
-        exit(1);
+        exit(1); // exit() which cause process termination. Include in <stdlib.h>
     }
 
+    // 5. history
+    // Display the list of previously executed commands, even on shell restart
     void print_cmd_history()
     {
         ifstream read_history("history.txt");
@@ -109,36 +111,38 @@ public:
         }
     }
 
+    // 6. pwd
+    // give the present working directory
     string getPWD()
     {
         char tmp[256];
-        getcwd(tmp, 256);
+        if (getcwd(tmp, 256) == nullptr)
+            perror("get directory path error: ");
+        // give the absolute pathname of CWD. Include in <unistd.h>
         return string(tmp);
     }
 
-    void printEnvVariables()
-    {
-        for (auto x : environmentVariables)
-        {
-            cout << x.first << "=" << x.second << "\n";
-        }
-    }
-
+    // 7. cd <directory>
+    // Change the current default directory to <directory>. If the <directory> argument is
+    // not present, report the current directory. If the directory doesn’t exist an
+    // appropriate error should be reported.
     void changeDirectory(vector<string> arg)
     {
-
         int arg_length = arg.size() - 1;
         if (arg_length > 1)
             cout << "shell: cd: too many arguments";
         else if (arg_length == 1)
         {
-            if (chdir(arg[1].c_str()) != 0)
+            if (chdir(arg[1].c_str()) != 0){
                 perror("Error: ");
+            }   
             else
-                environmentVariables["PWD"] = getPWD();
+                environmentVariables["PWD"] = this->getPWD();
         }
     }
 
+    // 8. dir <directory>
+    // list content of directory
     void listDirContent(vector<string> args)
     {
         int arg_len = args.size() - 1;
@@ -155,6 +159,7 @@ public:
         }
     }
 
+    // function for listing content of particular path directory
     void printDirContent(string path)
     {
         DIR *dir;
@@ -165,6 +170,7 @@ public:
             while ((diread = readdir(dir)) != nullptr)
             {
                 cout << diread->d_name << "\n";
+                // cout << diread->d_type<<"\n";
             }
             closedir(dir);
         }
@@ -176,6 +182,19 @@ public:
         }
     }
 
+    // 9. environ
+    // List all the environment strings of the current shell and the bash shell
+    void printEnvVariables()
+    {
+        for (auto x : environmentVariables)
+        {
+            cout << x.first << "=" << x.second << "\n";
+        }
+    }
+
+    // 10. echo <comment>
+    // Display <comment> on the display followed by a new line. Multiple spaces/tabs
+    // should be reduced to a single space.
     void echo(vector<string> args)
     {
         int i = 1, arg_len = args.size();
@@ -185,6 +204,7 @@ public:
     }
 };
 
+// to check that the command exist or not
 bool command_Exist(string commad)
 {
     for (auto x : commands_Table)
@@ -192,7 +212,30 @@ bool command_Exist(string commad)
             return true;
     return false;
 }
+
+// function for splitting commands
+vector<string> splitString(string command)
+{
+    vector<string> wordList;
+    string word = "";
+    for (auto x : command)
+    {
+        if (x == ' ')
+        {
+            if (word != "")
+                wordList.push_back(word);
+            word = "";
+        }
+        else
+            word = word + x;
+    }
+    if (word != "")
+        wordList.push_back(word);
+    return wordList;
+}
+
 ALLCommands func;
+// calling particular function for respective commands
 void run_command(vector<string> splitCommand)
 {
 
@@ -219,6 +262,8 @@ void run_command(vector<string> splitCommand)
         func.echo(splitCommand);
 }
 
+
+// func for storing all env in environmentVariables
 void stroringAllEnvVariables(char **envp)
 {
     for (char **env = envp; *env != 0; env++)
@@ -238,9 +283,25 @@ void stroringAllEnvVariables(char **envp)
     }
 }
 
+// setting SHELL env equal to our shell path 
+void setting_shell_Environ()
+{
+    char buf[1000];
+    if (readlink("/proc/self/exe", buf, sizeof(buf)) < 0)
+        perror("readlink() error: not able to set shell env :");
+    else
+        environmentVariables["SHELL"] = buf;
+}
+
+
 int main(int argc, char **argv, char **envp)
 {
+    // storing all env
     stroringAllEnvVariables(envp);
+    // set SHELL env
+    setting_shell_Environ();
+    
+    // for executing batchfile
     if (argc == 2)
     {
         if (freopen(argv[1], "r", stdin) == NULL)
@@ -249,16 +310,20 @@ int main(int argc, char **argv, char **envp)
             return 0;
         }
     }
-    // char *argo[]={NULL};
-    // execv("./try", argo);
+
+    // ignoring Ctrl+C intrupt signal 
     signal(SIGINT, SIG_IGN);
     string command;
     if (argc == 1)
-        cout << "\033[1;92mHacker@root:>>\033[0m ";
+        cout << "\033[1;31mHacker@root:>>\033[0m ";
+    
+    // looping shell
     while (getline(cin, command))
     {
+        if(command[0]=='#' || command=="") continue;
+        
         ofstream historyFile;
-
+        // storing history of all command in history file
         historyFile.open("history.txt", ios::app);
         historyFile << command << "\n";
         historyFile.close();
@@ -273,7 +338,6 @@ int main(int argc, char **argv, char **envp)
             pid_t pid = fork();
             if (pid == -1)
             {
-
                 // pid == -1 means error occured
                 printf("can't fork, error occured\n");
                 exit(EXIT_FAILURE);
@@ -285,7 +349,8 @@ int main(int argc, char **argv, char **envp)
                 /* Allow signal's default behaviour for process */
                 signal(SIGINT, SIG_DFL);
                 char *arg[] = {NULL};
-                if (execv(splitCommand[0].c_str(), arg)==-1){
+                if (execv(splitCommand[0].c_str(), arg) == -1)
+                {
                     cout << splitCommand[0] << ": command not found\n";
                 };
                 exit(0);
@@ -293,12 +358,10 @@ int main(int argc, char **argv, char **envp)
             else
             {
                 wait(&status);
-            } 
-            
-            
+            }
         }
         if (argc == 1)
-            cout << "\033[1;92mHacker@root:>>\033[0m ";
+            cout << "\033[1;31mHacker@root:>>\033[0m ";
     }
     return 0;
 }
