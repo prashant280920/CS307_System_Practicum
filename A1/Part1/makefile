@@ -8,10 +8,10 @@ main=shell.cpp
 
 
 myshell: $(OBJECTS)
-	$(COMPILER) $(OBJECTS) -o myshell
+	$(COMPILER) $< -o $@
 
 shell.o: $(main)
-	$(COMPILER) $(flags) $(main)
+	$(COMPILER) $(flags) $<
 
 clean:
 	rm -rf *o myshell

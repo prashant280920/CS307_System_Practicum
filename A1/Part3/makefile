@@ -6,12 +6,11 @@ flags=-c -Wall
 OBJECTS=main.o 
 main=main.cpp
 
-
-main: $(OBJECTS)
-	$(COMPILER) $(OBJECTS) -lpthread -o q3
+q3: $(OBJECTS) 
+	$(COMPILER) $< -lpthread -o $@
 
 main.o: $(main)
-	$(COMPILER) $(flags) $(main)
+	$(COMPILER) $(flags) $<
 
 clean:
 	rm -rf *o q3

@@ -2,16 +2,27 @@
 COMPILER=g++
 flags=-c -Wall
 
-#File Variable
-OBJECTS=main.o 
-main=main.cpp
+
+run: main1 main2 main3
 
 
-main: $(OBJECTS)
-	$(COMPILER) $(OBJECTS) -lpthread -o q2
+main1: main1.o
+	$(COMPILER) $< -lpthread -o $@
 
-main.o: $(main)
-	$(COMPILER) $(flags) $(main)
+main2: main2.o
+	$(COMPILER) $< -lpthread -o $@
+
+main3: main3.o
+	$(COMPILER) $< -lpthread -o $@
+
+main1.o: main1.cpp
+	$(COMPILER) $(flags)  $<
+
+main2.o: main2.cpp
+	$(COMPILER) $(flags)  $<
+
+main3.o: main3.cpp
+	$(COMPILER) $(flags)  $<
 
 clean:
-	rm -rf *o q2
+	rm -rf *o main1 main2 main3
