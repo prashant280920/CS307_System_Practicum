@@ -80,12 +80,13 @@ void diningTable_2(int student_i){
         draw.lock();
         spoons[right].lock();
         spoons[left].lock();
+        draw.unlock();
         isEating(student_i);
         eats[student_i]++;
         spoons[right].unlock();
         spoons[left].unlock();
         isThinking(student_i);
-        draw.unlock();
+
 
         printState.lock();
         cout << "------------------------------"<<endl;
