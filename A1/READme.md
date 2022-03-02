@@ -1,0 +1,1 @@
+->  <i> To run the Q2 in linux use command   </i> <b> g++ A1_Q2.cpp -lpthread -o a.out </b> <i>  and then </i>  <b> ./a.out </b>
