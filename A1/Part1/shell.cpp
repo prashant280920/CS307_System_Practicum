@@ -73,8 +73,7 @@ public:
     void pause_cmd()
     {
         cout << "Execution is paused! :)\nPress enter to continue!\n";
-        while (cin.get() != '\n')
-            ;
+        while (cin.get() != '\n');
     }
 
     // 3. help
@@ -108,16 +107,16 @@ public:
                 line_no++;
             }
             read_history.close();
-        }
+        }else perror("File open error");
     }
 
     // 6. pwd
     // give the present working directory
     string getPWD()
     {
-        char tmp[256];
-        if (getcwd(tmp, 256) == nullptr)
-            perror("get directory path error: ");
+        char tmp[1000];
+        if (getcwd(tmp, sizeof(tmp)) == nullptr)
+            perror("get directory path error");
         // give the absolute pathname of CWD. Include in <unistd.h>
         return string(tmp);
     }
@@ -130,16 +129,16 @@ public:
     {
         int arg_length = arg.size() - 1;
         if (arg_length > 1)
-            cout << "shell: cd: too many arguments";
+            cout << "shell: cd: too many arguments\n";
         else if (arg_length == 1)
         {
-            if (chdir(arg[1].c_str()) != 0){
-                perror("Error: ");
+            if (chdir(arg[1].c_str()) != 0){ // chdir include in <unistd.h>
+                perror("Error");
             }   
             else
                 environmentVariables["PWD"] = this->getPWD();
         }
-    }
+    } 
 
     // 8. dir <directory>
     // list content of directory
@@ -288,7 +287,7 @@ void setting_shell_Environ()
 {
     char buf[1000];
     if (readlink("/proc/self/exe", buf, sizeof(buf)) < 0)
-        perror("readlink() error: not able to set shell env :");
+        perror("readlink() error: not able to set shell env");
     else
         environmentVariables["SHELL"] = buf;
 }
@@ -306,7 +305,7 @@ int main(int argc, char **argv, char **envp)
     {
         if (freopen(argv[1], "r", stdin) == NULL)
         {
-            perror("error: ");
+            perror("Error");
             return 0;
         }
     }

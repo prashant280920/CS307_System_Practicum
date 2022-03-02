@@ -8,4 +8,4 @@ cd test1
 pwd
 echo lets move back to prevous directory
 cd ..
-echo Thank you! Have a noce day :)
+echo Thank you! Have a noce day
