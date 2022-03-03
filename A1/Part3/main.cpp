@@ -22,7 +22,7 @@ void InitialiseMatrix(int **Matrix){
     }
     for(int i=0; i< n; i++){
         for(int j=0; j< n; j++){
-            int val = rand()%10;
+            int val = rand()%100;
             Matrix[i][j] = val;
         }
     }
@@ -58,12 +58,19 @@ void MatMulNormal(){
 }
 
 void MatMulThread(int n_thread){
+    int remainder  = n%n_thread;
     int i=0; int j = n/n_thread;
     thread threads[n_thread];
     for(int k=0; k<n_thread; k++){
+        int extra = 0;
+        if(remainder){
+            extra = 1;
+            remainder--;
+        }
+        j = j + extra;
         threads[k]=thread(thread_Multiplication,i,j);
+        i = j;
         j += n/n_thread;
-        i += n/n_thread;
     }
     for(int k=0; k<n_thread; k++){
         threads[k].join();
@@ -131,3 +138,4 @@ int main(int argc, char *argv[]){
 
     return 0;
 }
+
