@@ -41,8 +41,10 @@ void isWaiting(int student_i){
 }
 //DeadLock is possible in below function. 
 void diningTable_1(int student_i){
-
-    while(true){
+    struct timespec startTime, endTime;
+    clock_gettime(CLOCK_MONOTONIC, &startTime);
+    int totaltime = 0;
+    while(totaltime < 1800){
         int left = student_i, right = (student_i+1)%5;
 
         isWaiting(student_i);
@@ -68,12 +70,21 @@ void diningTable_1(int student_i){
         }
         cout << "------------------------------"<<endl;
         printState.unlock();
+
+        clock_gettime(CLOCK_MONOTONIC, &endTime);
+        totaltime = (endTime.tv_sec  - startTime.tv_sec);
+        //cout << "Total Time " << totaltime <<endl;
+        if(totaltime > 1800){
+            break;
+        }
     }
 }
 //This Function Prevents Deadlock;
 void diningTable_2(int student_i){
-
-    while(true){
+    struct timespec startTime, endTime;
+    clock_gettime(CLOCK_MONOTONIC, &startTime);
+    int totaltime = 0;
+    while(totaltime < 1800){
         int left = student_i, right = (student_i+1)%5;
 
         isWaiting(student_i);
@@ -92,20 +103,28 @@ void diningTable_2(int student_i){
         cout << "------------------------------"<<endl;
         cout << "         Eat "<< " Think "<<" Wait "<<endl; 
         for(auto i: count_state){
-
-
             cout << "S"<< i.first + 1 <<": "
             <<"      " << i.second[0] << "     " 
             << i.second[1] << "     "<<i.second[2] << endl;
         }
-        cout << "------------------------------"<<endl;
+        cout << "------------------------------"<< endl;
         printState.unlock();
+
+        clock_gettime(CLOCK_MONOTONIC, &endTime);
+        totaltime = (endTime.tv_sec  - startTime.tv_sec);
+        //cout << "Total Time " << totaltime <<endl;
+        if(totaltime > 1800){
+            break;
+        }
+
     }
 }
 //Here Also Deadlock is not possible.
 void diningTable_3(int student_i){
-
-    while(true){
+    struct timespec startTime, endTime;
+    clock_gettime(CLOCK_MONOTONIC, &startTime);
+    int totaltime = 0;
+    while(totaltime < 1800){
         int left = student_i, right = (student_i+1)%5;
 
         isWaiting(student_i);
@@ -137,6 +156,13 @@ void diningTable_3(int student_i){
         }
         cout << "------------------------------"<<endl;
         printState.unlock();
+
+        clock_gettime(CLOCK_MONOTONIC, &endTime);
+        totaltime = (endTime.tv_sec  - startTime.tv_sec);
+        //cout << "Total Time " << totaltime <<endl;
+        if(totaltime > 1800){
+            break;
+        }
     }
 }
 int main()
