@@ -11,4 +11,5 @@
 ## Running the file
 1. Run command `make`. This will create three exe files named main1, main2 and main3.
 2. Now run the exe file one by one using `./main1` , `./main2` , `./main3` respectively. 
+3. If you want to clean all objects file (.o file) and exe file. Then just run `make clean`.
 

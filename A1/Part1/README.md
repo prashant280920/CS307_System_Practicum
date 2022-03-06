@@ -17,3 +17,4 @@ We have created myshell.
 1. Run command `make`. This will create a <myshell> exe file.
 2. Now run the exe file `./myshell`. Now you can run the shell commands 
 3. If you want to run batchfile. I have given a batchfile for testing. Just run `./myshell batchfile`. 
+4. If you want to clean all objects file (.o file) and exe file. Then just run `make clean`.
