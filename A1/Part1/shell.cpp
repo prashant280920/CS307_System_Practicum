@@ -62,10 +62,7 @@ public:
     // function for clear the terminal screen
     void clear_screen()
     {
-        if (!OS_Windows)
-            system("clear"); // system() that include in <stdlib.h>
-        else
-            system("cls");
+        printf("\e[H\e[2J\e[3J");
     }
 
     // 2. pause
