@@ -1,0 +1,3 @@
+pwd
+echo lets move back to prevous directory
+cd ..
