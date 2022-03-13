@@ -1,9 +1,5 @@
-### Problem 2 -  Dining students
+### Problem 2 - Dining Students
 
-### General Details
-1. Programming Language - C++
-2. Module Used - iostream, thread, semaphore.h, mutex, condition_variable, vector, chrono, unistd.h, unordered_map
-3. gcc version - g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
 
 ## About the codes
 1. The part2 is solved using three different approaches.
@@ -15,5 +11,4 @@
 ## Running the file
 1. Run command `make`. This will create three exe files named main1, main2 and main3.
 2. Now run the exe file one by one using `./main1` , `./main2` , `./main3` respectively. 
-3. If you want to clean all objects file (.o file) and exe file. Then just run `make clean`.
-
+3. Program will stop automatically after 30 minutes.

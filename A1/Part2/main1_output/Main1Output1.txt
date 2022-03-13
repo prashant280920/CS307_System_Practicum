@@ -1,0 +1,2014 @@
+S1: Waiting for spoons
+S1: Both spoons acquired.
+S2: Waiting for spoons
+S4: Waiting for spoons
+S4: Both spoons acquired.
+S3: Waiting for spoons
+S5: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       0     0     1
+S4:       1     0     1
+S3:       0     0     1
+S2:       0     0     1
+S1:       1     1     1
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       0     0     1
+S4:       1     1     1
+S3:       0     0     1
+S2:       0     0     1
+S1:       1     1     2
+------------------------------
+S4: Waiting for spoons
+S2: Thinking
+S1: Both spoons acquired.
+S5: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       1     0     1
+S4:       1     1     2
+S3:       0     0     1
+S2:       1     1     1
+S1:       1     1     2
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       1     1     1
+S4:       1     1     2
+S3:       0     0     1
+S2:       1     1     2
+S1:       1     1     2
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       1     1     2
+S4:       1     1     2
+S3:       1     1     1
+S2:       1     1     2
+S1:       2     1     2
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       1     1     2
+S4:       1     1     2
+S3:       1     1     2
+S2:       1     1     2
+S1:       2     2     2
+------------------------------
+S1: Waiting for spoons
+S4: Thinking
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       1     1     2
+S4:       2     2     2
+S3:       1     1     2
+S2:       2     1     2
+S1:       2     2     3
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       1     1     2
+S4:       2     2     3
+S3:       1     1     2
+S2:       2     2     2
+S1:       2     2     3
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S5: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       2     2     2
+S4:       2     2     3
+S3:       2     1     2
+S2:       2     2     3
+S1:       2     2     3
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       2     2     3
+S4:       2     2     3
+S3:       2     2     2
+S2:       2     2     3
+S1:       2     2     3
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S5: Both spoons acquired.
+S1: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       2     2     3
+S4:       3     3     3
+S3:       2     2     3
+S2:       2     2     3
+S1:       3     2     3
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       2     2     3
+S4:       3     3     4
+S3:       2     2     3
+S2:       2     2     3
+S1:       3     3     3
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     3
+S4:       3     3     4
+S3:       2     2     3
+S2:       3     2     3
+S1:       3     3     4
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     4
+S4:       3     3     4
+S3:       2     2     3
+S2:       3     3     3
+S1:       3     3     4
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S3: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     4
+S4:       3     3     4
+S3:       3     3     3
+S2:       3     3     4
+S1:       4     3     4
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     4
+S4:       3     3     4
+S3:       3     3     4
+S2:       3     3     4
+S1:       4     4     4
+------------------------------
+S1: Waiting for spoons
+S4: Thinking
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     4
+S4:       4     3     4
+S3:       3     3     4
+S2:       4     4     4
+S1:       4     4     5
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       3     3     4
+S4:       4     4     4
+S3:       3     3     4
+S2:       4     4     5
+S1:       4     4     5
+------------------------------
+S4: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S5: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       4     3     4
+S4:       4     4     5
+S3:       4     4     4
+S2:       4     4     5
+S1:       4     4     5
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       4     4     4
+S4:       4     4     5
+S3:       4     4     5
+S2:       4     4     5
+S1:       4     4     5
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       4     4     5
+S4:       5     5     5
+S3:       4     4     5
+S2:       4     4     5
+S1:       5     4     5
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       4     4     5
+S4:       5     5     6
+S3:       4     4     5
+S2:       4     4     5
+S1:       5     5     5
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S2: Thinking
+S1: Both spoons acquired.
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       5     4     5
+S4:       5     5     6
+S3:       4     4     5
+S2:       5     5     5
+S1:       5     5     6
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       5     5     5
+S4:       5     5     6
+S3:       4     4     5
+S2:       5     5     6
+S1:       5     5     6
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S4: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       5     5     6
+S4:       5     5     6
+S3:       5     4     5
+S2:       5     5     6
+S1:       6     6     6
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       5     5     6
+S4:       5     5     6
+S3:       5     5     5
+S2:       5     5     6
+S1:       6     6     7
+------------------------------
+S3: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S4: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       5     5     6
+S4:       6     6     6
+S3:       5     5     6
+S2:       6     5     6
+S1:       6     6     7
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       5     5     6
+S4:       6     6     7
+S3:       5     5     6
+S2:       6     6     6
+S1:       6     6     7
+------------------------------
+S2: Waiting for spoons
+S5: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       6     6     6
+S4:       6     6     7
+S3:       6     5     6
+S2:       6     6     7
+S1:       6     6     7
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       6     6     7
+S4:       6     6     7
+S3:       6     6     6
+S2:       6     6     7
+S1:       6     6     7
+------------------------------
+S3: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       6     6     7
+S4:       7     6     7
+S3:       6     6     7
+S2:       6     6     7
+S1:       7     7     7
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       6     6     7
+S4:       7     7     7
+S3:       6     6     7
+S2:       6     6     7
+S1:       7     7     8
+------------------------------
+S4: Waiting for spoons
+S3: Both spoons acquired.
+S2: Thinking
+S5: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       7     6     7
+S4:       7     7     8
+S3:       6     6     7
+S2:       7     7     7
+S1:       7     7     8
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       7     7     7
+S4:       7     7     8
+S3:       6     6     7
+S2:       7     7     8
+S1:       7     7     8
+------------------------------
+S5: Waiting for spoons
+S3: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+S1: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       7     7     8
+S4:       7     7     8
+S3:       7     6     7
+S2:       7     7     8
+S1:       8     8     8
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       7     7     8
+S4:       7     7     8
+S3:       7     7     7
+S2:       7     7     8
+S1:       8     8     9
+------------------------------
+S3: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S4: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       7     7     8
+S4:       8     8     8
+S3:       7     7     8
+S2:       8     7     8
+S1:       8     8     9
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       7     7     8
+S4:       8     8     9
+S3:       7     7     8
+S2:       8     8     8
+S1:       8     8     9
+------------------------------
+S2: Waiting for spoons
+S5: Thinking
+S4: Both spoons acquired.
+S1: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       8     7     8
+S4:       8     8     9
+S3:       8     8     8
+S2:       8     8     9
+S1:       8     8     9
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       8     8     8
+S4:       8     8     9
+S3:       8     8     9
+S2:       8     8     9
+S1:       8     8     9
+------------------------------
+S5: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       8     8     9
+S4:       9     9     9
+S3:       8     8     9
+S2:       8     8     9
+S1:       9     8     9
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       8     8     9
+S4:       9     9     10
+S3:       8     8     9
+S2:       8     8     9
+S1:       9     9     9
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     9
+S4:       9     9     10
+S3:       8     8     9
+S2:       9     8     9
+S1:       9     9     10
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     10
+S4:       9     9     10
+S3:       8     8     9
+S2:       9     9     9
+S1:       9     9     10
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S4: Both spoons acquired.
+S3: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     10
+S4:       9     9     10
+S3:       9     8     9
+S2:       9     9     10
+S1:       10     10     10
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     10
+S4:       9     9     10
+S3:       9     9     9
+S2:       9     9     10
+S1:       10     10     11
+------------------------------
+S3: Waiting for spoons
+S5: Both spoons acquired.
+S2: Thinking
+S4: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     10
+S4:       10     9     10
+S3:       9     9     10
+S2:       10     10     10
+S1:       10     10     11
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       9     9     10
+S4:       10     10     10
+S3:       9     9     10
+S2:       10     10     11
+S1:       10     10     11
+------------------------------
+S4: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       10     10     10
+S4:       10     10     11
+S3:       10     9     10
+S2:       10     10     11
+S1:       10     10     11
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       10     10     11
+S4:       10     10     11
+S3:       10     10     10
+S2:       10     10     11
+S1:       10     10     11
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       10     10     11
+S4:       11     11     11
+S3:       10     10     11
+S2:       10     10     11
+S1:       11     10     11
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       10     10     11
+S4:       11     11     12
+S3:       10     10     11
+S2:       10     10     11
+S1:       11     11     11
+------------------------------
+S1: Waiting for spoons
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       11     10     11
+S4:       11     11     12
+S3:       10     10     11
+S2:       11     11     11
+S1:       11     11     12
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       11     11     11
+S4:       11     11     12
+S3:       10     10     11
+S2:       11     11     12
+S1:       11     11     12
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       11     11     12
+S4:       11     11     12
+S3:       11     10     11
+S2:       11     11     12
+S1:       12     12     12
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       11     11     12
+S4:       11     11     12
+S3:       11     11     11
+S2:       11     11     12
+S1:       12     12     13
+------------------------------
+S3: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       11     11     12
+S4:       12     12     12
+S3:       11     11     12
+S2:       12     11     12
+S1:       12     12     13
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       11     11     12
+S4:       12     12     13
+S3:       11     11     12
+S2:       12     12     12
+S1:       12     12     13
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       12     11     12
+S4:       12     12     13
+S3:       12     12     12
+S2:       12     12     13
+S1:       12     12     13
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       12     12     12
+S4:       12     12     13
+S3:       12     12     13
+S2:       12     12     13
+S1:       12     12     13
+------------------------------
+S5: Waiting for spoons
+S4: Thinking
+S1: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       12     12     13
+S4:       13     13     13
+S3:       12     12     13
+S2:       12     12     13
+S1:       13     12     13
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       12     12     13
+S4:       13     13     14
+S3:       12     12     13
+S2:       12     12     13
+S1:       13     13     13
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S2: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     13
+S4:       13     13     14
+S3:       12     12     13
+S2:       13     12     13
+S1:       13     13     14
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     14
+S4:       13     13     14
+S3:       12     12     13
+S2:       13     13     13
+S1:       13     13     14
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S3: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     14
+S4:       13     13     14
+S3:       13     13     13
+S2:       13     13     14
+S1:       14     13     14
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     14
+S4:       13     13     14
+S3:       13     13     14
+S2:       13     13     14
+S1:       14     14     14
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S3: Both spoons acquired.
+S4: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     14
+S4:       14     14     14
+S3:       13     13     14
+S2:       14     13     14
+S1:       14     14     15
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       13     13     14
+S4:       14     14     15
+S3:       13     13     14
+S2:       14     14     14
+S1:       14     14     15
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S5: Thinking
+S4: Both spoons acquired.
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       14     14     14
+S4:       14     14     15
+S3:       14     13     14
+S2:       14     14     15
+S1:       14     14     15
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       14     14     15
+S4:       14     14     15
+S3:       14     14     14
+S2:       14     14     15
+S1:       14     14     15
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+S1: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       14     14     15
+S4:       15     14     15
+S3:       14     14     15
+S2:       14     14     15
+S1:       15     15     15
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       14     14     15
+S4:       15     15     15
+S3:       14     14     15
+S2:       14     14     15
+S1:       15     15     16
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S1: Both spoons acquired.
+S2: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       15     14     15
+S4:       15     15     16
+S3:       14     14     15
+S2:       15     15     15
+S1:       15     15     16
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       15     15     15
+S4:       15     15     16
+S3:       14     14     15
+S2:       15     15     16
+S1:       15     15     16
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S4: Both spoons acquired.
+S3: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       15     15     16
+S4:       15     15     16
+S3:       15     14     15
+S2:       15     15     16
+S1:       16     16     16
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       15     15     16
+S4:       15     15     16
+S3:       15     15     15
+S2:       15     15     16
+S1:       16     16     17
+------------------------------
+S3: Waiting for spoons
+S5: Both spoons acquired.
+S2: Thinking
+S3: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       15     15     16
+S4:       16     15     16
+S3:       15     15     16
+S2:       16     16     16
+S1:       16     16     17
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       15     15     16
+S4:       16     16     16
+S3:       15     15     16
+S2:       16     16     17
+S1:       16     16     17
+------------------------------
+S4: Waiting for spoons
+S1: Both spoons acquired.
+S5: Thinking
+S4: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       16     15     16
+S4:       16     16     17
+S3:       16     16     16
+S2:       16     16     17
+S1:       16     16     17
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       16     16     16
+S4:       16     16     17
+S3:       16     16     17
+S2:       16     16     17
+S1:       16     16     17
+------------------------------
+S5: Waiting for spoons
+S2: Both spoons acquired.
+S1: Thinking
+S4: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       16     16     17
+S4:       17     16     17
+S3:       16     16     17
+S2:       16     16     17
+S1:       17     17     17
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       16     16     17
+S4:       17     17     17
+S3:       16     16     17
+S2:       16     16     17
+S1:       17     17     18
+------------------------------
+S4: Waiting for spoons
+S2: Thinking
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       17     16     17
+S4:       17     17     18
+S3:       16     16     17
+S2:       17     17     17
+S1:       17     17     18
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       17     17     17
+S4:       17     17     18
+S3:       16     16     17
+S2:       17     17     18
+S1:       17     17     18
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       17     17     18
+S4:       17     17     18
+S3:       17     17     17
+S2:       17     17     18
+S1:       18     17     18
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       17     17     18
+S4:       17     17     18
+S3:       17     17     18
+S2:       17     17     18
+S1:       18     18     18
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       17     17     18
+S4:       18     18     18
+S3:       17     17     18
+S2:       18     17     18
+S1:       18     18     19
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       17     17     18
+S4:       18     18     19
+S3:       17     17     18
+S2:       18     18     18
+S1:       18     18     19
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       18     18     18
+S4:       18     18     19
+S3:       18     17     18
+S2:       18     18     19
+S1:       18     18     19
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       18     18     19
+S4:       18     18     19
+S3:       18     18     18
+S2:       18     18     19
+S1:       18     18     19
+------------------------------
+S3: Waiting for spoons
+S2: Both spoons acquired.
+S1: Thinking
+S4: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       18     18     19
+S4:       19     19     19
+S3:       18     18     19
+S2:       18     18     19
+S1:       19     18     19
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       18     18     19
+S4:       19     19     20
+S3:       18     18     19
+S2:       18     18     19
+S1:       19     19     19
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S1: Both spoons acquired.
+S2: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     19
+S4:       19     19     20
+S3:       18     18     19
+S2:       19     18     19
+S1:       19     19     20
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     20
+S4:       19     19     20
+S3:       18     18     19
+S2:       19     19     19
+S1:       19     19     20
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S3: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     20
+S4:       19     19     20
+S3:       19     19     19
+S2:       19     19     20
+S1:       20     19     20
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     20
+S4:       19     19     20
+S3:       19     19     20
+S2:       19     19     20
+S1:       20     20     20
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     20
+S4:       20     19     20
+S3:       19     19     20
+S2:       20     20     20
+S1:       20     20     21
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       19     19     20
+S4:       20     20     20
+S3:       19     19     20
+S2:       20     20     21
+S1:       20     20     21
+------------------------------
+S4: Waiting for spoons
+S3: Thinking
+S4: Both spoons acquired.
+S5: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       20     20     20
+S4:       20     20     21
+S3:       20     19     20
+S2:       20     20     21
+S1:       20     20     21
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       20     20     21
+S4:       20     20     21
+S3:       20     20     20
+S2:       20     20     21
+S1:       20     20     21
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       20     20     21
+S4:       21     20     21
+S3:       20     20     21
+S2:       20     20     21
+S1:       21     21     21
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       20     20     21
+S4:       21     21     21
+S3:       20     20     21
+S2:       20     20     21
+S1:       21     21     22
+------------------------------
+S4: Waiting for spoons
+S3: Both spoons acquired.
+S5: Thinking
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     21
+S4:       21     21     22
+S3:       20     20     21
+S2:       21     20     21
+S1:       21     21     22
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     22
+S4:       21     21     22
+S3:       20     20     21
+S2:       21     21     21
+S1:       21     21     22
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     22
+S4:       21     21     22
+S3:       21     20     21
+S2:       21     21     22
+S1:       22     22     22
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     22
+S4:       21     21     22
+S3:       21     21     21
+S2:       21     21     22
+S1:       22     22     23
+------------------------------
+S3: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     22
+S4:       22     21     22
+S3:       21     21     22
+S2:       22     22     22
+S1:       22     22     23
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       21     21     22
+S4:       22     22     22
+S3:       21     21     22
+S2:       22     22     23
+S1:       22     22     23
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       22     21     22
+S4:       22     22     23
+S3:       22     22     22
+S2:       22     22     23
+S1:       22     22     23
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       22     22     22
+S4:       22     22     23
+S3:       22     22     23
+S2:       22     22     23
+S1:       22     22     23
+------------------------------
+S5: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+S1: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       22     22     23
+S4:       23     23     23
+S3:       22     22     23
+S2:       22     22     23
+S1:       23     22     23
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       22     22     23
+S4:       23     23     24
+S3:       22     22     23
+S2:       22     22     23
+S1:       23     23     23
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S2: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       23     22     23
+S4:       23     23     24
+S3:       22     22     23
+S2:       23     23     23
+S1:       23     23     24
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       23     23     23
+S4:       23     23     24
+S3:       22     22     23
+S2:       23     23     24
+S1:       23     23     24
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       23     23     24
+S4:       23     23     24
+S3:       23     23     23
+S2:       23     23     24
+S1:       24     23     24
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       23     23     24
+S4:       23     23     24
+S3:       23     23     24
+S2:       23     23     24
+S1:       24     24     24
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S4: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       23     23     24
+S4:       24     24     24
+S3:       23     23     24
+S2:       24     23     24
+S1:       24     24     25
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       23     23     24
+S4:       24     24     25
+S3:       23     23     24
+S2:       24     24     24
+S1:       24     24     25
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       24     23     24
+S4:       24     24     25
+S3:       24     24     24
+S2:       24     24     25
+S1:       24     24     25
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       24     24     24
+S4:       24     24     25
+S3:       24     24     25
+S2:       24     24     25
+S1:       24     24     25
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S4: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       24     24     25
+S4:       25     25     25
+S3:       24     24     25
+S2:       24     24     25
+S1:       25     24     25
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       24     24     25
+S4:       25     25     26
+S3:       24     24     25
+S2:       24     24     25
+S1:       25     25     25
+------------------------------
+S1: Waiting for spoons
+S3: Both spoons acquired.
+S2: Thinking
+S1: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       25     24     25
+S4:       25     25     26
+S3:       24     24     25
+S2:       25     25     25
+S1:       25     25     26
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       25     25     25
+S4:       25     25     26
+S3:       24     24     25
+S2:       25     25     26
+S1:       25     25     26
+------------------------------
+S5: Waiting for spoons
+S1: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       25     25     26
+S4:       25     25     26
+S3:       25     25     25
+S2:       25     25     26
+S1:       26     25     26
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       25     25     26
+S4:       25     25     26
+S3:       25     25     26
+S2:       25     25     26
+S1:       26     26     26
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S4: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       25     25     26
+S4:       26     26     26
+S3:       25     25     26
+S2:       26     25     26
+S1:       26     26     27
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       25     25     26
+S4:       26     26     27
+S3:       25     25     26
+S2:       26     26     26
+S1:       26     26     27
+------------------------------
+S2: Waiting for spoons
+S5: Thinking
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       26     26     26
+S4:       26     26     27
+S3:       26     25     26
+S2:       26     26     27
+S1:       26     26     27
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       26     26     27
+S4:       26     26     27
+S3:       26     26     26
+S2:       26     26     27
+S1:       26     26     27
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       26     26     27
+S4:       27     27     27
+S3:       26     26     27
+S2:       26     26     27
+S1:       27     26     27
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       26     26     27
+S4:       27     27     28
+S3:       26     26     27
+S2:       26     26     27
+S1:       27     27     27
+------------------------------
+S1: Waiting for spoons
+S3: Both spoons acquired.
+S5: Thinking
+S2: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       27     26     27
+S4:       27     27     28
+S3:       26     26     27
+S2:       27     27     27
+S1:       27     27     28
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       27     27     27
+S4:       27     27     28
+S3:       26     26     27
+S2:       27     27     28
+S1:       27     27     28
+------------------------------
+S5: Waiting for spoons
+S3: Thinking
+S4: Both spoons acquired.
+S2: Both spoons acquired.
+S1: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       27     27     28
+S4:       27     27     28
+S3:       27     27     27
+S2:       27     27     28
+S1:       28     27     28
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       27     27     28
+S4:       27     27     28
+S3:       27     27     28
+S2:       27     27     28
+S1:       28     28     28
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S4: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       27     27     28
+S4:       28     27     28
+S3:       27     27     28
+S2:       28     28     28
+S1:       28     28     29
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       27     27     28
+S4:       28     28     28
+S3:       27     27     28
+S2:       28     28     29
+S1:       28     28     29
+------------------------------
+S4: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       28     27     28
+S4:       28     28     29
+S3:       28     28     28
+S2:       28     28     29
+S1:       28     28     29
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       28     28     28
+S4:       28     28     29
+S3:       28     28     29
+S2:       28     28     29
+S1:       28     28     29
+------------------------------
+S5: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+S1: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       28     28     29
+S4:       29     28     29
+S3:       28     28     29
+S2:       28     28     29
+S1:       29     29     29
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       28     28     29
+S4:       29     29     29
+S3:       28     28     29
+S2:       28     28     29
+S1:       29     29     30
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     29
+S4:       29     29     30
+S3:       28     28     29
+S2:       29     28     29
+S1:       29     29     30
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     30
+S4:       29     29     30
+S3:       28     28     29
+S2:       29     29     29
+S1:       29     29     30
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     30
+S4:       29     29     30
+S3:       29     28     29
+S2:       29     29     30
+S1:       30     30     30
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     30
+S4:       29     29     30
+S3:       29     29     29
+S2:       29     29     30
+S1:       30     30     31
+------------------------------
+S3: Waiting for spoons
+S2: Thinking
+S5: Both spoons acquired.
+S4: Thinking
+S3: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     30
+S4:       30     30     30
+S3:       29     29     30
+S2:       30     29     30
+S1:       30     30     31
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       29     29     30
+S4:       30     30     31
+S3:       29     29     30
+S2:       30     30     30
+S1:       30     30     31
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+S5: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       30     29     30
+S4:       30     30     31
+S3:       30     30     30
+S2:       30     30     31
+S1:       30     30     31
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       30     30     30
+S4:       30     30     31
+S3:       30     30     31
+S2:       30     30     31
+S1:       30     30     31
+------------------------------
+S5: Waiting for spoons
+S4: Thinking
+S5: Both spoons acquired.
+S1: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       30     30     31
+S4:       31     30     31
+S3:       30     30     31
+S2:       30     30     31
+S1:       31     31     31
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       30     30     31
+S4:       31     31     31
+S3:       30     30     31
+S2:       30     30     31
+S1:       31     31     32
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     31
+S4:       31     31     32
+S3:       30     30     31
+S2:       31     30     31
+S1:       31     31     32
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     32
+S4:       31     31     32
+S3:       30     30     31
+S2:       31     31     31
+S1:       31     31     32
+------------------------------
+S2: Waiting for spoons
+S4: Both spoons acquired.
+S1: Thinking
+S2: Both spoons acquired.
+S3: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     32
+S4:       31     31     32
+S3:       31     31     31
+S2:       31     31     32
+S1:       32     31     32
+------------------------------
+S3: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     32
+S4:       31     31     32
+S3:       31     31     32
+S2:       31     31     32
+S1:       32     32     32
+------------------------------
+S1: Waiting for spoons
+S2: Thinking
+S3: Both spoons acquired.
+S4: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     32
+S4:       32     32     32
+S3:       31     31     32
+S2:       32     31     32
+S1:       32     32     33
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       31     31     32
+S4:       32     32     33
+S3:       31     31     32
+S2:       32     32     32
+S1:       32     32     33
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S5: Thinking
+S4: Both spoons acquired.
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       32     32     32
+S4:       32     32     33
+S3:       32     31     32
+S2:       32     32     33
+S1:       32     32     33
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       32     32     33
+S4:       32     32     33
+S3:       32     32     32
+S2:       32     32     33
+S1:       32     32     33
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S1: Thinking
+S2: Both spoons acquired.
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       32     32     33
+S4:       33     33     33
+S3:       32     32     33
+S2:       32     32     33
+S1:       33     32     33
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       32     32     33
+S4:       33     33     34
+S3:       32     32     33
+S2:       32     32     33
+S1:       33     33     33
+------------------------------
+S1: Waiting for spoons
+S5: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     33
+S4:       33     33     34
+S3:       32     32     33
+S2:       33     32     33
+S1:       33     33     34
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     34
+S4:       33     33     34
+S3:       32     32     33
+S2:       33     33     33
+S1:       33     33     34
+------------------------------
+S2: Waiting for spoons
+S1: Thinking
+S4: Both spoons acquired.
+S3: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     34
+S4:       33     33     34
+S3:       33     32     33
+S2:       33     33     34
+S1:       34     34     34
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     34
+S4:       33     33     34
+S3:       33     33     33
+S2:       33     33     34
+S1:       34     34     35
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     34
+S4:       34     33     34
+S3:       33     33     34
+S2:       34     34     34
+S1:       34     34     35
+------------------------------
+S2: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       33     33     34
+S4:       34     34     34
+S3:       33     33     34
+S2:       34     34     35
+S1:       34     34     35
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S4: Both spoons acquired.
+S3: Thinking
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       34     34     34
+S4:       34     34     35
+S3:       34     33     34
+S2:       34     34     35
+S1:       34     34     35
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       34     34     35
+S4:       34     34     35
+S3:       34     34     34
+S2:       34     34     35
+S1:       34     34     35
+------------------------------
+S3: Waiting for spoons
+S4: Thinking
+S2: Both spoons acquired.
+S1: Thinking
+S5: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       34     34     35
+S4:       35     34     35
+S3:       34     34     35
+S2:       34     34     35
+S1:       35     35     35
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       34     34     35
+S4:       35     35     35
+S3:       34     34     35
+S2:       34     34     35
+S1:       35     35     36
+------------------------------
+S4: Waiting for spoons
+S5: Thinking
+S2: Thinking
+S3: Both spoons acquired.
+S1: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     35
+S4:       35     35     36
+S3:       34     34     35
+S2:       35     34     35
+S1:       35     35     36
+------------------------------
+S5: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     36
+S4:       35     35     36
+S3:       34     34     35
+S2:       35     35     35
+S1:       35     35     36
+------------------------------
+S2: Waiting for spoons
+S4: Both spoons acquired.
+S3: Thinking
+S1: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     36
+S4:       35     35     36
+S3:       35     34     35
+S2:       35     35     36
+S1:       36     36     36
+------------------------------
+S1: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     36
+S4:       35     35     36
+S3:       35     35     35
+S2:       35     35     36
+S1:       36     36     37
+------------------------------
+S3: Waiting for spoons
+S5: Both spoons acquired.
+S3: Both spoons acquired.
+S2: Thinking
+S4: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     36
+S4:       36     36     36
+S3:       35     35     36
+S2:       36     35     36
+S1:       36     36     37
+------------------------------
+S4: Waiting for spoons
+------------------------------
+         Eat  Think  Wait 
+S5:       35     35     36
+S4:       36     36     37
+S3:       35     35     36
+S2:       36     36     36
+S1:       36     36     37
+------------------------------
+S2: Waiting for spoons
+S3: Thinking
+S5: Thinking
+S1: Both spoons acquired.
+S4: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       36     36     36
+S4:       36     36     37
+S3:       36     35     36
+S2:       36     36     37
+S1:       36     36     37
+------------------------------
+------------------------------
+         Eat  Think  Wait 
+S5:       36     36     36
+S4:       36     36     37
+S3:       36     36     36
+S2:       36     36     37
+S1:       36     36     37
+------------------------------
+S4: Thinking
+S1: Thinking
+S2: Both spoons acquired.
+------------------------------
+         Eat  Think  Wait 
+S5:       36     36     36
+S4:       37     36     37
+S3:       36     36     36
+S2:       36     36     37
+S1:       37     37     37
+------------------------------
+------------------------------
+         Eat  Think  Wait 
+S5:       36     36     36
+S4:       37     37     37
+S3:       36     36     36
+S2:       36     36     37
+S1:       37     37     37
+------------------------------
+S2: Thinking
+------------------------------
+         Eat  Think  Wait 
+S5:       36     36     36
+S4:       37     37     37
+S3:       36     36     36
+S2:       37     37     37
+S1:       37     37     37
+------------------------------
+

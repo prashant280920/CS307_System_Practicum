@@ -1,7 +1,6 @@
 #include <iostream>
 #include<bits/stdc++.h>
 #include <thread>
-#include <semaphore.h>
 #include <mutex>
 #include <condition_variable>
 #include <vector>
@@ -119,7 +118,9 @@ int main(int argc, char *argv[]){
     // Calling function to multiply using thread.
     struct timespec startThreading, endThreading;
     clock_gettime(CLOCK_MONOTONIC, &startThreading);
+    //Change the number of thread by passing different arguments in below function. 
     MatMulThread(4);
+
     clock_gettime(CLOCK_MONOTONIC, &endThreading);
 
     double timeSequential = (endSequential.tv_sec  - startSequential.tv_sec)* 1e9;

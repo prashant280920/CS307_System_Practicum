@@ -14,7 +14,6 @@ mutex printPer;
 mutex draw;
 mutex printState;
 
-int eats[5]={0};
 unordered_map<int, vector<int>> count_state;
 
 void isEating(int student_i){
@@ -29,8 +28,8 @@ void isThinking(int student_i){
     printPer.lock();
     cout<<"S"<<student_i+1<<": Thinking"<<endl;
     printPer.unlock();
-    // unsigned int ms = rand()%2000;
-    this_thread::sleep_for(chrono::milliseconds(1500));
+    unsigned int ms = rand()%2000;
+    this_thread::sleep_for(chrono::milliseconds(ms));
     count_state[student_i][1]++;
 }
 void isWaiting(int student_i){
@@ -39,86 +38,7 @@ void isWaiting(int student_i){
     count_state[student_i][2]++;
     printPer.unlock();
 }
-//DeadLock is possible in below function. 
-void diningTable_1(int student_i){
-    struct timespec startTime, endTime;
-    clock_gettime(CLOCK_MONOTONIC, &startTime);
-    int totaltime = 0;
-    while(totaltime < 1800){
-        int left = student_i, right = (student_i+1)%5;
 
-        isWaiting(student_i);
-        //draw.lock();
-        spoons[right].lock();
-        spoons[left].lock();
-        isEating(student_i);
-        eats[student_i]++;
-        spoons[right].unlock();
-        spoons[left].unlock();
-        isThinking(student_i);
-        //draw.unlock();
-
-        printState.lock();
-        cout << "------------------------------"<<endl;
-        cout << "         Eat "<< " Think "<<" Wait "<<endl; 
-        for(auto i: count_state){
-
-
-            cout << "S"<< i.first + 1 <<": "
-            <<"      " << i.second[0] << "     " 
-            << i.second[1] << "     "<<i.second[2] << endl;
-        }
-        cout << "------------------------------"<<endl;
-        printState.unlock();
-
-        clock_gettime(CLOCK_MONOTONIC, &endTime);
-        totaltime = (endTime.tv_sec  - startTime.tv_sec);
-        //cout << "Total Time " << totaltime <<endl;
-        if(totaltime > 1800){
-            break;
-        }
-    }
-}
-//This Function Prevents Deadlock;
-void diningTable_2(int student_i){
-    struct timespec startTime, endTime;
-    clock_gettime(CLOCK_MONOTONIC, &startTime);
-    int totaltime = 0;
-    while(totaltime < 1800){
-        int left = student_i, right = (student_i+1)%5;
-
-        isWaiting(student_i);
-        draw.lock();
-        spoons[right].lock();
-        spoons[left].lock();
-        draw.unlock();
-        isEating(student_i);
-        eats[student_i]++;
-        spoons[right].unlock();
-        spoons[left].unlock();
-        isThinking(student_i);
-
-
-        printState.lock();
-        cout << "------------------------------"<<endl;
-        cout << "         Eat "<< " Think "<<" Wait "<<endl; 
-        for(auto i: count_state){
-            cout << "S"<< i.first + 1 <<": "
-            <<"      " << i.second[0] << "     " 
-            << i.second[1] << "     "<<i.second[2] << endl;
-        }
-        cout << "------------------------------"<< endl;
-        printState.unlock();
-
-        clock_gettime(CLOCK_MONOTONIC, &endTime);
-        totaltime = (endTime.tv_sec  - startTime.tv_sec);
-        //cout << "Total Time " << totaltime <<endl;
-        if(totaltime > 1800){
-            break;
-        }
-
-    }
-}
 //Here Also Deadlock is not possible.
 void diningTable_3(int student_i){
     struct timespec startTime, endTime;
@@ -138,7 +58,6 @@ void diningTable_3(int student_i){
         }
 
         isEating(student_i);
-        eats[student_i]++;
         spoons[right].unlock();
         spoons[left].unlock();
         isThinking(student_i);

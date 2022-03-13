@@ -21,4 +21,4 @@ test.o: test.cpp
 	$(COMPILER) $(flags) $<
 
 clean:
-	rm -rf *o myshell test history.txt
+	rm -rf *o myshell test
