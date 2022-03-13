@@ -1,5 +1,9 @@
-### Problem 2 - Creating a myshell
+### Problem 2 -  Dining students
 
+### General Details
+1. Programming Language - C++
+2. Module Used - iostream, thread, semaphore.h, mutex, condition_variable, vector, chrono, unistd.h, unordered_map
+3. gcc version - g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
 
 ## About the codes
 1. The part2 is solved using three different approaches.
