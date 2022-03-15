@@ -41,6 +41,9 @@ using namespace std;
 // storing environment Variables in key value pair
 map<string, string> environmentVariables;
 
+char myshell_path[1000];
+
+
 // list of all commands and their description
 vector<pair<string, string>> commands_Table = {
     {"clr", "Clear the terminal screen"},
@@ -92,7 +95,7 @@ public:
     // Display the list of previously executed commands, even on shell restart
     void print_cmd_history()
     {
-        ifstream read_history("history.txt");
+        ifstream read_history(string(myshell_path)+"history.txt");
         string line;
         int line_no = 0;
         if (read_history.is_open())
@@ -100,7 +103,8 @@ public:
             while (read_history)
             {
                 getline(read_history, line);
-                cout << line_no << " " << line << endl;
+                if (line!="")
+                    cout << line_no << " " << line << endl;
                 line_no++;
             }
             read_history.close();
@@ -279,14 +283,16 @@ void stroringAllEnvVariables(char **envp)
     }
 }
 
+
+
 // setting SHELL env equal to our shell path 
 void setting_shell_Environ()
 {
-    char buf[1000];
-    if (readlink("/proc/self/exe", buf, sizeof(buf)) < 0)
+    
+    if (readlink("/proc/self/exe", myshell_path, sizeof(myshell_path)) < 0)
         perror("readlink() error: not able to set shell env");
     else
-        environmentVariables["SHELL"] = buf;
+        environmentVariables["SHELL"] = myshell_path;
 }
 
 
@@ -320,7 +326,7 @@ int main(int argc, char **argv, char **envp)
         
         ofstream historyFile;
         // storing history of all command in history file
-        historyFile.open("history.txt", ios::app);
+        historyFile.open(string(myshell_path)+"history.txt", ios::app);
         historyFile << command << "\n";
         historyFile.close();
 
