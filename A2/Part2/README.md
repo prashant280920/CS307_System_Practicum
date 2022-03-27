@@ -20,5 +20,5 @@ The parent reads from the four pipes and prints on the display.
     - filename_from_copy - txt file ehich u want to copy
     - filename_to_copy - enter the name of the file in which u want to copy
 
-    We provided the mapping_table.txt, espeak.txt
-    Eaxmple for ruuning the exe file: ` ./q2 mapping_table.txt espeak.txt mapping_table.txt copy.txt `.
+    We provided the mapping_table.txt, espeak.txt<br>
+    Example for ruuning the exe file: ` ./q2 mapping_table.txt espeak.txt mapping_table.txt copy.txt `.
