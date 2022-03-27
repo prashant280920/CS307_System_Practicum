@@ -10,13 +10,5 @@
 
 
 ## Running the file
-1. Run command `make`. This will create exe files named `q2`.
-2. Now for running the exe file. Exe file takes 4 arrugument. `./q2 <mapping.txt filename> <espeak.txt filename> <filename_from_copy> <filename_to_copy>`
-    -  mapping.txt filename - passing a mapping txt filename 
-    - espeak.txt filename - passing the txt file that contain text which will speak by the linux utility "espeak".
-    - filename_from_copy - txt file ehich u want to copy
-    - filename_to_copy - enter the name of the file in which u want to copy
-
-    We provided the mapping_table.txt, espeak.txt
-    Eaxmple for ruuning the exe file: ` ./q2 mapping_table.txt espeak.txt mapping_table.txt copy.txt `.
-
+1. Run command `make`. This will create exe files named `q3`.
+2. Now run the exe file by using `./q3` followed by size of the matrix i.e., `./q3 size_of_matrix`. 
