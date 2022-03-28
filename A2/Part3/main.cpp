@@ -6,13 +6,12 @@
 #include <chrono>
 #include <unistd.h>
 #include <ctime>
+
 #define vi vector<int>
 #define vvi vector<vi>
 using namespace std;
-mutex lck;
-mutex qlk;
-int currThreads=0;
 
+int currThreads=0;
 class List{
     public:
         int val;
@@ -50,18 +49,6 @@ List* sortList2(List* head){
 }
 
 void sortList(List* head, vector<List*>&v, int i){
-    // vi temp;
-    // auto savehead = head;
-    // while(head){
-    //     temp.push_back(head->val);
-    //     head=head->next;
-    // }
-    // sort(temp.begin(),temp.end());
-    // head=savehead;
-    // for(auto x: temp){
-    //     head->val = x;
-    //     head=head->next;
-    // }
     v[i]=sortList2(head);
 }
 
@@ -121,12 +108,6 @@ void print(List * head){
     output.close();
 }
 
-int giveVal(){
-    lck.lock();
-    int x = currThreads;
-    lck.unlock();
-    return x;
-}
 
 vector<List *> give(string &inPath, int nThreads){
     vector<List *>ans(nThreads,NULL);
@@ -156,23 +137,15 @@ int main(int argc, char** argv){
     string ouPath = argv[3];
     ifstream iFile(inPath);
     vector<List *>temp = give(inPath,nThreads);
-    // for(auto head: temp){
-    //     print(head);
-    //     cout<<endl;
-    // }
-    // sortList(temp[0]);
-    // sortList(temp[1]);
-    // auto head = merge(temp[0],temp[1]);
-    // print(head);
+
     const clock_t time = clock();
     thread threads[nThreads];
     for(int i=0; i<nThreads; i++){
-        // threads[i]=thread(sortList,temp[i],ref(temp),i);
-        sortList(temp[i],temp,i);
+        threads[i]=thread(sortList,temp[i],ref(temp),i);
     }
-    // for(int i=0; i<nThreads; i++){
-    //     threads[i].join();
-    // }
+    for(int i=0; i<nThreads; i++){
+        threads[i].join();
+    }
     queue<List*>q;
     queue<thread>qt;
     for(auto &x: temp){
@@ -193,14 +166,10 @@ int main(int argc, char** argv){
     }
     while( q.size()!=1);
     cout<<"Execution Time is "<<float(clock()-time)/CLOCKS_PER_SEC<<endl;
-    //print(q.front());
     
     auto head = q.front();
     
     print(head) ;
-    
-
-
 
     return 0;
 }
