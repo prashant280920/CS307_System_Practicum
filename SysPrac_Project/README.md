@@ -6,7 +6,7 @@ This is our System Practicum (CS307) Group Project.
 ## APP Sources
 1. App is Deploy on GitHub - [CodeWing ;)](https://prashant280920.github.io/CodeWing/)
 2. Source Code - [prashant280920/CodeWing](https://github.com/prashant280920/CodeWing)
-3. PPT - [Link]()
+3. PPT - [Link](https://github.com/prashant280920/CS307_System_Practicum/tree/main/SysPrac_Project)
 4. Presentation + Demo on [Youtube](https://youtu.be/GrOmdXlWy04) 
 
 ## Our Team 
@@ -37,4 +37,8 @@ This is our System Practicum (CS307) Group Project.
 3. [Video Server](https://github.com/salon280920/video_server) for implementing Video application.
 4. [Chat Server](https://github.com/salon280920/chat_server) for implementing chat application.
 5. [Peer Js](https://peerjs.com/#:~:text=PeerJS%20simplifies%20WebRTC%20peer%2Dto,connection%20to%20a%20remote%20peer.) PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls
+
+## ScreenShot
+![Screenshot (350)](https://user-images.githubusercontent.com/60234231/171387103-bda2083b-a8c9-4ddf-88ed-bcb44d3d4cad.png)
+
 
